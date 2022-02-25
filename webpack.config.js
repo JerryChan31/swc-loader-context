@@ -19,9 +19,6 @@ const config = {
         test: /\.(ts|tsx)$/i,
         loader: "swc-loader",
         exclude: ["/node_modules/"],
-        // options: {
-        //   transpileOnly: true,
-        // },
       },
 
       // Add your rules for custom modules here
