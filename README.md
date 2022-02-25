@@ -25,4 +25,14 @@ a.js before B
 B.js exec
 ```
 
+the code difference between those branches is:
+```
+-        loader: "swc-loader",
++        loader: "ts-loader",
+         exclude: ["/node_modules/"],
++        options: {
++          transpileOnly: true
++        }
+```
+
 It would be grateful to know what cause the difference. Thank you!
