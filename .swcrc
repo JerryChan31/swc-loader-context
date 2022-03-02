@@ -20,10 +20,18 @@
   },
   "module": {
     "type": "commonjs",
-    "strict": false,
+    "strict": true,
     "strictMode": true,
     "lazy": false,
     "noInterop": false
+  },
+  "minify": false,
+  "env": {
+    "targets": {
+      "chrome": "83"
+    },
+    "mode": "entry",
+    "coreJs": 3
   },
   "exclude": [".spec.ts$"]
 }

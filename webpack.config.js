@@ -6,6 +6,12 @@ const isProduction = process.env.NODE_ENV == "production";
 
 const config = {
   entry: "./a.ts",
+  node: {
+    fs: 'empty'
+  },
+  optimization: {
+    minimize: false
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
   },
